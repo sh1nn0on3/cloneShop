@@ -1,18 +1,32 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Form from "./Form";
+import axios from "axios";
 import { Helmet } from "react-helmet-async";
 
 const Register = () => {
-  const [nameInput, setNameInput] = useState("");
+  const [inputs, setInputs] = useState({
+    name: "",
+    email: "",
+    phone: "",
+    password: "",
+  });
 
-  const [emailInput, setEmailInput] = useState("");
-
-  const [passwordInput, setPasswordInput] = useState("");
+  const handleChange = (e) => {
+    setInputs((prev) => ({ ...prev, [e.target.name]: e.target.value }));
+  };
 
   let navigate = useNavigate();
 
-  const handleSubmit = () => {};
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      await axios.post("http://localhost:8000/sign-up", inputs);
+      navigate("/login");
+    } catch (error) {
+      console.log(error);
+    }
+  };
 
   return (
     <>
@@ -33,28 +47,30 @@ const Register = () => {
               className="h-8 p-5 mt-4 w-full border border-gray-400 rounded-2xl outline-none bg-gray-50 "
               placeholder="Họ và tên của bạn ..."
               type="text"
-              onChange={(e) => {
-                setNameInput(e.target.value);
-              }}
-              value={nameInput}
+              name="name"
+              onChange={handleChange}
             />
+
             <input
               className="h-8 p-5 w-full border border-gray-400 rounded-2xl outline-none bg-gray-50 "
               placeholder="Email của bạn ..."
               type="text"
-              onChange={(e) => {
-                setEmailInput(e.target.value);
-              }}
-              value={emailInput}
+              name="email"
+              onChange={handleChange}
+            />
+            <input
+              className="h-8 p-5 w-full border border-gray-400 rounded-2xl outline-none bg-gray-50 "
+              placeholder="Số điện thoại của bạn ..."
+              type="text"
+              name="phone"
+              onChange={handleChange}
             />
             <input
               className="h-8 p-5 w-full border border-gray-400 rounded-2xl outline-none  bg-gray-50"
               placeholder="Mật khẩu của bạn ..."
               type="password"
-              onChange={(e) => {
-                setPasswordInput(e.target.value);
-              }}
-              value={passwordInput}
+              name="password"
+              onChange={handleChange}
             />
           </div>
           <div className="w-full flex gap-2 justify-center items-center mt-4 max-w-2xl ">
