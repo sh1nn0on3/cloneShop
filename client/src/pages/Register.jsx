@@ -22,7 +22,7 @@ const Register = () => {
     e.preventDefault();
     try {
       await axios.post("http://localhost:8000/sign-up", inputs);
-      navigate("/login");
+      navigate("/");
     } catch (error) {
       console.log(error);
     }
