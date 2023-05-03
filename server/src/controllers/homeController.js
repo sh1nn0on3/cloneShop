@@ -18,7 +18,12 @@ let signIn = async (req, res) => {
         return res.send("Log in failed")
     }
 }
+
+let getProductInformationById = (req,res) => {
+
+}
 module.exports = {
     signUp: signUp,
     signIn: signIn,
+    getProductInformationById: getProductInformationById,
 }
