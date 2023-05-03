@@ -13,9 +13,9 @@ let signIn = async (req, res) => {
     let message = await allServices.logIn(req.body)
     console.log(message)
     if(message.errCode === 0){
-        res.send("Log in succeed")
+        res.send("1")
     }else{
-        return res.send("Log in failed")
+        return res.send("0")
     }
 }
 module.exports = {

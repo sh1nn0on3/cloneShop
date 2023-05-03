@@ -3,6 +3,9 @@ import { useNavigate } from "react-router-dom";
 import Form from "./Form";
 import axios from "axios";
 import { Helmet } from "react-helmet-async";
+import isEmpty from "validator/lib/isEmpty"
+import isEmail from "validator/lib/isEmail"
+
 
 const Register = () => {
   const [inputs, setInputs] = useState({
@@ -11,6 +14,28 @@ const Register = () => {
     phone: "",
     password: "",
   });
+  const [validateMsg, setValidateMsg] = useState({})
+
+  const validateAll = () =>{
+    const msg = {}
+    if(isEmpty(inputs.name)){
+      msg.name = "Vui lòng nhập Tên"
+    }
+    if(isEmpty(inputs.email)){
+      msg.email = "Vui lòng nhập Email"
+    }else if(!isEmail(inputs.email)){
+      msg.email = "Có phải email đâu ??"
+    }
+    if(isEmpty(inputs.phone)){
+      msg.phone = "Vui lòng nhập Phone"
+    }
+    if(isEmpty(inputs.password)){
+      msg.password = "Vui lòng nhập Password"
+    }
+    setValidateMsg(msg)
+    if(Object.keys(msg).length > 0) return false
+    return true
+  }
 
   const handleChange = (e) => {
     setInputs((prev) => ({ ...prev, [e.target.name]: e.target.value }));
@@ -20,6 +45,8 @@ const Register = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    const isValid = validateAll()
+    if(!isValid) return 
     try {
       await axios.post("http://localhost:8000/sign-up", inputs);
       navigate("/");
@@ -48,14 +75,15 @@ const Register = () => {
               placeholder="Họ và tên của bạn ..."
               type="text"
               name="name"
+              id="name"
               onChange={handleChange}
             />
-
             <input
               className="h-8 p-5 w-full border border-gray-400 rounded-2xl outline-none bg-gray-50 "
               placeholder="Email của bạn ..."
-              type="text"
+              type="email"
               name="email"
+              id="email"
               onChange={handleChange}
             />
             <input
@@ -63,6 +91,7 @@ const Register = () => {
               placeholder="Số điện thoại của bạn ..."
               type="text"
               name="phone"
+              id="phone"
               onChange={handleChange}
             />
             <input
@@ -70,13 +99,16 @@ const Register = () => {
               placeholder="Mật khẩu của bạn ..."
               type="password"
               name="password"
+              id="password"
               onChange={handleChange}
             />
+            <p className="pl-5 text-red-500 text-center">{`${validateMsg.name || validateMsg.email || validateMsg.phone || validateMsg.password || "" }`}</p>
           </div>
           <div className="w-full flex gap-2 justify-center items-center mt-4 max-w-2xl ">
             <button
               className="w-full border border-red-500 bg-red-500 text-white font-bold p-4 rounded-full"
               onClick={handleSubmit}
+              type="submit"
             >
               Đăng ký
             </button>
