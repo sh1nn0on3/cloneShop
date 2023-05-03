@@ -7,6 +7,8 @@ let initWebRoutes = (app) => {
     });
 
    router.post('/sign-up',homeController.signUp);
-    return app.use('/',router);
+
+   router.post("/sign-in",homeController.signIn)
+    return app.use('/',router);;
 }
 module.exports = initWebRoutes;

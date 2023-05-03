@@ -4,13 +4,20 @@ import db from "../models/index"
 let createUser = (data) => {
     return new Promise(async (resolve,reject) => {
         try{
-            await db.User.create({
-                name: data.name,
-                email: data.email,
-                phone: data.phone,
-                password: data.password
+            let isExist = await db.User.findOne({
+                where: { email : data.email}
             })
-            resolve("New user created")
+            if(!isExist){
+                await db.User.create({
+                    name: data.name,
+                    email: data.email,
+                    phone: data.phone,
+                    password: data.password
+                })
+                resolve("New user created")
+            }else{
+                resolve("Email already used")
+            }
         }catch(e){
             reject(e);
             
@@ -19,6 +26,50 @@ let createUser = (data) => {
     })
 }
 
+
+let logIn = async (data) => {
+    let userEmail = data.email
+    let userPassword = data.password
+    return new Promise(async (resolve, reject) => {
+        try{
+            if(!userEmail||!userPassword){
+                resolve({
+                    errCode : 1,
+                    message: "Lack of data"
+                })
+            }
+            else {
+                let user = await db.User.findOne({
+                    where : { email : userEmail }
+                })
+                if(!user){
+                    resolve({
+                        errCode : 2,
+                        message: "Wrong email"
+                    })
+                }else{
+                    if(userPassword === user.password){
+                        resolve({
+                            errCode: 0,
+                            message: "Log in success"
+                        })
+                    }else{
+                        resolve({
+                            errCode: 3,
+                            message: "Wrong password"
+                        })
+                    }
+                }
+            }
+
+        } catch(e){
+            reject(e)
+        }
+    })
+}
+
+
 module.exports = {
     createUser: createUser,
+    logIn: logIn,
 }
