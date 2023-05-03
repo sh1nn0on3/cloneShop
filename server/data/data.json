@@ -1,325 +1,364 @@
 {
-    "body": [
-      {
-        "name": "[New Outlet] Laptop Acer Nitro 5 AN515-58-5046 - Intel Core i5-12500H | RAM 16GB | Nvidia RTX 3050Ti | 15.6 Inch Full HD 144Hz",
-        "images": "https://laptop88.vn/media/product/6713_5046_new.jpg",
-        "cpu": "Intel Core i5-12500H",
-        "ssd": "SSD 512GB NVMe",
-        "card": "Nvidia RTX 3050Ti",
-        "man": "15.6 Inch Full HD 144Hz"
-      },
-      {
-        "name": "[New 100%] Lenovo Legion 5 15IAH7 82RC008LVN - Intel Core i5 - 12500H | RTX 3050 | 15.6 Inch Full HD 100% sRGB 165Hz",
-        "images": "https://laptop88.vn/media/product/7036_ac___legion.jpg",
-        "cpu": "Intel Core i5 - 12500H",
-        "ssd": "SSD 512GB NVMe",
-        "card": "NVIDIA RTX 3050 4GB",
-        "man": "15.6 Inch Full HD, 165Hz, 100% sRGB"
-      },
-      {
-        "name": "[New 100%] Laptop HP VICTUS 16-e1107AX 7C140PA - AMD Ryzen 5 - 6600H | 16GB | RTX 3050 4GB | 16.1 Inch Full HD 144hz",
-        "images": "https://laptop88.vn/media/product/6659_hp_victus_16_e1107ax_7c140pa.jpg",
-        "cpu": "AMD Ryzen 5-6600H",
-        "ssd": "SSD 512GB NMVe",
-        "card": "NVIDIA GeForce RTX 3050 4GB GDDR6",
-        "man": "16.1 Inch Full HD 144Hz"
-      },
-      {
-        "name": "[New Outlet] Laptop Dell Inspiron 14 5425-VNYK0 | AMD R5-5625U | 16GB RAM | 14 inch Full HD+ Touch",
-        "images": "https://laptop88.vn/media/product/7765_ac_m___i_99__laptop_dell_inspiron_14_5425_amd_r5_5625u_16gb_ram_14__3_.jpg",
-        "cpu": "AMD Ryzen 5-5625U",
-        "ssd": "SSD 512GB",
-        "card": "AMD Radeon Vega Graphics",
-        "man": "14 Inch Full HD+ Touch"
-      },
-      {
-        "name": "[New 100%] Laptop Gaming Acer Nitro 5 Eagle AN515-57-5669 | Intel Core i5-11400H | GTX 1650 | 144Hz",
-        "images": "https://laptop88.vn/media/product/4766_nitro_5_5669.jpg",
-        "cpu": "Intel Core i5 - 11400H",
-        "ssd": "SSD NVMe 512GB",
-        "card": "Nvidia Geforce GTX 1650 4GB",
-        "man": "15.6 inch Full HD 144hz"
-      },
-      {
-        "name": "[New 100%] Laptop Gaming MSI GF63 Thin 11SC 664VN - Intel Core i5-11400H | GTX 1650 | 144Hz",
-        "images": "https://laptop88.vn/media/product/5809_anb_msi_gf63_thin_11sc_664vn_2.jpg",
-        "cpu": "Intel Core i5-11400H",
-        "ssd": "SSD 512GB NVMe",
-        "card": "Card rời GTX 1650 4GB GDDR6",
-        "man": "15.6 Inch Full HD 144Hz"
-      },
-      {
-        "name": "[New 100%] Laptop MSI Sword 15 A12UC 295US - Intel Core i5 - 12450H | RTX 3050 | 15.6 Inch Full HD 144Hz",
-        "images": "https://laptop88.vn/media/product/8054_anb_msi_sword___gaming_m___i_2023__2_.jpg",
-        "cpu": "Intel Core i5 - 12450H",
-        "ssd": "SSD 512GB NMVe",
-        "card": "NVIDIA GeForce RTX 3050",
-        "man": "15.6 Inch Full HD 144Hz"
-      },
-      {
-        "name": "[New 100%] Laptop Gaming GIGABYTE G5 GD 51VN123SO - Intel Core i5-11400H | RTX 3050 | 144Hz",
-        "images": "https://laptop88.vn/media/product/6817_gigabyte_g5_gd_51vn123so.jpg",
-        "cpu": "Intel Core i5-11400H",
-        "ssd": "SSD 512GB NVMe",
-        "card": "Nvidia RTX 3050 4GB",
-        "man": "15.6 Inch Full HD 144hz"
-      },
-      {
-        "name": "[New 100%] Laptop Asus Zenbook Q409ZA-90NB0WC1 (2022) - Intel Core i5 1240P | Màn Oled 100% DCI-P3",
-        "images": "https://laptop88.vn/media/product/7318_ac_m___i_100__full_box_laptop_asus_zenbook_q409za_90nb0wc1_2022_intel.jpg",
-        "cpu": "Intel Core i5 1240P",
-        "ssd": "256GB M.2 PCIe NVMe",
-        "card": "Intel® Iris® Xe Graphics",
-        "man": "14 inch OLED 2.8K 100% DCI - P3"
-      },
-      {
-        "name": "[New Outlet] Laptop Gaming Acer Nitro 5 AN517-55-5354 - Intel Core i5 - 12500H | RTX 3050 4GB | 17.3 Inch Full HD 144Hz",
-        "images": "https://laptop88.vn/media/product/7830_5354_1.jpg",
-        "cpu": "Intel Core i5 - 12500H",
-        "ssd": "SSD 512GB NVMe",
-        "card": "NVIDIA GeForce RTX 3050 4GB",
-        "man": "17.3 Inch Full HD 144hz"
-      },
-      {
-        "name": "[New 100%] Laptop Lenovo Yoga 7 16IAP7-82QG0001US - Intel Core i5 - 1240P | 16 Inch 2K 100% sRGB 400nits",
-        "images": "https://laptop88.vn/media/product/8033_yoga.jpg",
-        "cpu": "Intel Core i5-1240P",
-        "ssd": "SSD 256GB NMVe",
-        "card": "Intel Iris Xe Graphics",
-        "man": "16 Inch 2K 100% sRGB 400nits"
-      },
-      {
-        "name": "[New 100%] Laptop Gaming Gigabyte G5 MF E2VN333SH - Intel Core i5-12500H | RTX 4050 | 15.6 inch Full HD 144Hz",
-        "images": "https://laptop88.vn/media/product/8126_ac___gigabyte_g5_mf_e2vn333sh.jpg",
-        "cpu": "Intel Core i5-12500H",
-        "ssd": "SSD 512GB NMVe",
-        "card": "NVidia Geforce RTX 4050",
-        "man": "15.6 Inch Full HD 144Hz"
-      },
-      {
-        "name": "[New 100%] Laptop Dell Vostro 3405 R1505D - AMD Ryzen 5 | 14 inch Full HD",
-        "images": "https://laptop88.vn/media/product/6881_dell_vostro_v3405___amd_ryzen_5.jpg",
-        "cpu": "AMD Ryzen 5 3500U",
-        "ssd": "SSD 256GB NVMe",
-        "card": "Card AMD Vega",
-        "man": "14 Inch Full HD"
-      },
-      {
-        "name": "[New 100%] Laptop Lenovo IdeaPad 3 15ABA7 82RN0070VN - AMD Ryzen 5 - 5625U | 15.6 Inch Full HD",
-        "images": "https://laptop88.vn/media/product/7699_070vn.jpg",
-        "cpu": "AMD Ryzen 5 - 5625U",
-        "ssd": "SSD 512GB NMVe",
-        "card": "AMD Radeon Graphics",
-        "man": "15.6 Inch Full HD"
-      },
-      {
-        "name": "[New 100%] Laptop HP Victus 15 FA0031DX 68U87UA (2022) - Intel Core i5-12450H | GTX 1650 | 15.6 Inch Full HD 144Hz",
-        "images": "https://laptop88.vn/media/product/7421_victus_15.jpg",
-        "cpu": "Intel Core i5-12450H",
-        "ssd": "SSD 512GB NVMe",
-        "card": "NVIDIA® GeForce® GTX 1650 4GB GDDR6",
-        "man": "15.6 Inch Full HD 144Hz"
-      },
-      {
-        "name": "[New 100%] Laptop MSI Cyborg 15 A12VE 240VN - Intel Core i7 - 12650H | RTX 4050 | 15.6 Inch Full HD",
-        "images": "https://laptop88.vn/media/product/7968_msi_cyborg_15_a12ve_240vn.jpg",
-        "cpu": "Intel Core i7 - 12650H",
-        "ssd": "SSD 512GB NMVe",
-        "card": "Nvidia GeForce RTX 4050",
-        "man": "15.6 Inch Full HD 144Hz"
-      },
-      {
-        "name": "[New 100%] Dell XPS 13 9315-F4GH8 Mới - i5-1230U | 13.4\" Full HD+",
-        "images": "https://laptop88.vn/media/product/7827_dell_xps_13_9315___i5_1230u.jpg",
-        "cpu": "Intel Core i5 - 1230U",
-        "ssd": "SSD 512GB NMVe",
-        "card": "Intel Iris Xe Graphics",
-        "man": "13.4 Inch Full HD+ 500nits"
-      },
-      {
-        "name": "[New Outlet] Laptop HP Elitebook 840 G7 - Intel core i5 10310u | 16GB | 256GB",
-        "images": "https://laptop88.vn/media/product/8036_hp_elitebook_840_g7.jpg",
-        "cpu": "Intel Core i5 10310U",
-        "ssd": "SSD 256GB",
-        "card": "Card Intel® UHD Graphics",
-        "man": "14 Inch Full HD"
-      },
-      {
-        "name": "[New Outlet] Laptop Acer Swift 3 SF314-512-52MZ - Intel Core i5 - 1240P | 14 Inch Full HD IPS 100%sRGB",
-        "images": "https://laptop88.vn/media/product/7831_ac_m___i_99__full_box_laptop_acer_swift_3_sf314_512_52mz_2.jpg",
-        "cpu": "Intel Core i5 - 1240P",
-        "ssd": "SSD 512GB NVMe",
-        "card": "Intel Iris Xe Graphics",
-        "man": "14 Inch Full HD 100% sRGB"
-      },
-      {
-        "name": "[New 100%] Laptop MSI Gaming Katana GF66 12UC 699VN - Intel Core i5 - 12450H | RTX 3050",
-        "images": "https://laptop88.vn/media/product/7631_msi_gaming_katana_gf66_12uc_699vn.jpg",
-        "cpu": "Intel Core i5 - 12450H",
-        "ssd": "SSD 512GB NMVe",
-        "card": "Nvidia GeForce RTX 3050",
-        "man": "15.6 Inch Full HD 144Hz"
-      },
-      {
-        "name": "[New 100%] Laptop Lenovo Ideapad Gaming 3 15ACH6 82K201XCUS - AMD Ryzen 5 - 5600H | RTX 3050 Ti | 15.6 Inch Full HD 120Hz",
-        "images": "https://laptop88.vn/media/product/6937_ac_m___i_100__full_box_laptop_lenovo_ideapad_gaming_3_15ach6_82k201xcus.jpg",
-        "cpu": "AMD Ryzen 5 - 5600H",
-        "ssd": "SSD 256GB NVMe",
-        "card": "NVIDIA GeForce RTX 3050Ti 4GB GDDR6",
-        "man": "15.6 Inch Full HD IPS 120Hz"
-      },
-      {
-        "name": "[New 100%] Laptop MSI Gaming Bravo 15 B5DD-275VN - AMD Ryzen 7 - 5800H | Card rời RX5500M | 15.6 Inch Full HD",
-        "images": "https://laptop88.vn/media/product/5212_ac____new_100___laptop_msi_gaming_bravo_15_b5dd_275vn_2.jpg",
-        "cpu": "AMD Ryzen 7 - 5800H",
-        "ssd": "SSD 512GB NVMe",
-        "card": "Card rời RX5500M 4GB GDDR6",
-        "man": "15.6 Inch Full HD IPS"
-      },
-      {
-        "name": "[New 100%] Laptop HP Pavilion x360 14-ek0013dx 691L0UA - Intel Core i3 - 1215U | 14 Inch Full HD [2022]",
-        "images": "https://laptop88.vn/media/product/7719_hp_pavilion_x360_i3_2022_anh_chinh.jpg",
-        "cpu": "Intel Core i3-1215U",
-        "ssd": "SSD 256GB NMVe",
-        "card": "Intel UHD Graphics",
-        "man": "14 Inch Full HD Touch IPS"
-      },
-      {
-        "name": "[New Outlet] Laptop LG Gram 14 Lightweight 14ZB90Q-G.AAC6U1 - Intel Core i7-1260p | 14 Inch 2K WQXGA",
-        "images": "https://laptop88.vn/media/product/7987_lg_gram_14_lightweight_14zb90q_g_aac6u1.jpg",
-        "cpu": "Intel Core i7-1260P",
-        "ssd": "SSD 512GB NMVe",
-        "card": "Intel Iris Xe Graphics",
-        "man": "14 Inch 2K WQXGA, 100% sRGB"
-      },
-      {
-        "name": "[New Outlet] Laptop Dell G16 7620 - Intel Core i7 - 12700H | RTX 3050Ti | 16 Inch QHD+ 100% sRGB",
-        "images": "https://laptop88.vn/media/product/8052_dell_g16_7620___intel_core_i7___12700h.jpg",
-        "cpu": "Intel Core i7 - 12700H",
-        "ssd": "SSD 512GB NMVe",
-        "card": "Nvidia RTX3050 Ti",
-        "man": "16 Inch QHD+ 165Hz 100% sRGB"
-      },
-      {
-        "name": "[New Outlet] Laptop Dell Gaming G15 5520 - Intel Core i5 - 12500H | RTX 3050 | 15.6 Inch Full HD",
-        "images": "https://laptop88.vn/media/product/7698_dell_gaming_g15_5520___intel_core_i5___12500h.jpg",
-        "cpu": "Intel Core i5 - 12500H",
-        "ssd": "SSD 256GB NMVe",
-        "card": "Nvidia GeForce RTX3050",
-        "man": "15.6 Inch Full HD 120Hz"
-      },
-      {
-        "name": "[New Outlet] Laptop Samsung Galaxy Book Pro 15 NP950XDB KC5US - Intel Core i7 | RAM 16GB | SSD 1TB | 15.6 Inch Full HD OLED",
-        "images": "https://laptop88.vn/media/product/6976_ac___laptop_samsung_galaxy_book_pro_15_np950xdb_kc5us__np930xdb_kb1us___intel_core_i7.jpg",
-        "cpu": "Intel Core i7-1165G7",
-        "ssd": "SSD 1TB NVMe",
-        "card": "Intel® Iris Xe Graphics",
-        "man": "15.6 Inch Full HD AmOLED 370 nits 100% sRGB"
-      },
-      {
-        "name": "[New 100%] Laptop Dell Gaming G15 5525 691KP - AMD Ryzen 5 6600H | RTX 3050 4GB | 15.6 Inch Full HD 120Hz",
-        "images": "https://laptop88.vn/media/product/6695_ac___dell_g15_5525_691kp_2022.jpg",
-        "cpu": "AMD Ryzen 5 - 6600H",
-        "ssd": "SSD 512GB NVMe",
-        "card": "NVIDIA GeForce RTX 3050 4GB GDDR6",
-        "man": "15.6 Inch Full HD 120Hz"
-      },
-      {
-        "name": "[Mới 100% Full Box] Laptop Lenovo IdeaPad 5 Pro 14IAP7 82SH000SVN - Intel Core i5 - 1240P | 14 Inch 2.8K",
-        "images": "https://laptop88.vn/media/product/7911_lenovo_ideapad_5_pro_14iap7_82sh000svn.jpg",
-        "cpu": "Intel Core i5 - 1240P",
-        "ssd": "SSD 512GB NMVe",
-        "card": "Intel Iris Xe Graphics",
-        "man": "14 Inch 2.8K 100%sRGB"
-      },
-      {
-        "name": "[New 100%] Laptop MSI Modern 14 C13M 458VN - Intel Core i5 - 1335U | 14 Inch Full HD",
-        "images": "https://laptop88.vn/media/product/7966_ac____laptop_msi_modern_14_c13m_458vn_22.jpg",
-        "cpu": "Intel Core i5 - 1335U",
-        "ssd": "SSD 512GB NMVe",
-        "card": "Intel Iris Xe Graphics",
-        "man": "14 Inch Full HD"
-      },
-      {
-        "name": "[New 100%] Laptop HP 250 G8 2R9H2EA - Intel Core i3",
-        "images": "https://laptop88.vn/media/product/6719_6518_hp_250_g8_389x8pa_1.jpg",
-        "cpu": "Intel Core i3-1005G1",
-        "ssd": "SSD 256GB",
-        "card": "Intel UHD Graphics",
-        "man": "15.6 Inch HD"
-      },
-      {
-        "name": "[New 100%] Laptop Ideapad 5 Pro 16ARH7 82SN003LVN - AMD Ryzen 5 - 6600HS | GTX1650 4GB | 16 Inch 2.5K WQXGA",
-        "images": "https://laptop88.vn/media/product/7975_ac___laptop_ideapad_5_pro_16arh7_82sn003lvn_2.jpg",
-        "cpu": "AMD Ryzen 5 - 6600HS",
-        "ssd": "SSD 512GB NMVe",
-        "card": "NVIDIA GeForce GTX 1650",
-        "man": "16 Inch 2.5K WQXGA"
-      },
-      {
-        "name": "[New 100%] Laptop Asus TUF Dash 2022 F15 FX517ZC HN077W - Intel Core i5 12450H | RTX 3050 | RAM 8GB DDR5",
-        "images": "https://laptop88.vn/media/product/7008_ac_m___i_100__full_box_laptop_asus_tuf_dash_2022_f15_fx517zc_hn077w__2_.jpg",
-        "cpu": "Intel Core i5-12450H",
-        "ssd": "SSD 512GB NVMe",
-        "card": "NVIDIA® GeForce RTX™ 3050 4GB GDDR6",
-        "man": "15.6 Inch Full HD 144Hz"
-      },
-      {
-        "name": "[New 100%] Laptop Dell Inspiron 3520 N5I5122W1 - Intel Core i5-1235U | 15.6 Inch Full HD 120Hz",
-        "images": "https://laptop88.vn/media/product/7603_dell_inspiron_3520_n5i5122w1.jpg",
-        "cpu": "Intel Core i5-1235U",
-        "ssd": "SSD 256GB NMVe",
-        "card": "Intel UHD | Iris Xe Graphics",
-        "man": "15.6 Inch Full HD 120Hz"
-      },
-      {
-        "name": "[New 100%] Laptop Gaming MSI Katana 15 B13VEK 252VN | Intel Core i7-13620H | RTX 4050 6GB | 144Hz",
-        "images": "https://laptop88.vn/media/product/7986_msi_katana_15_b13vek_252vn.jpg",
-        "cpu": "Intel Core i7-13620H",
-        "ssd": "SSD 512GB NVMe",
-        "card": "Nvidia Geforce RTX 4050",
-        "man": "15.6 inch Full HD 144Hz"
-      },
-      {
-        "name": "[New Outlet] Laptop Lenovo IdeaPad 5 Pro 16ACH6 82L500F5US - AMD Ryzen 5-5600H | 16 Inch WQXGA 100% sRGB",
-        "images": "https://laptop88.vn/media/product/6965_lenovo_ideapad_5_pro_16ach6_82l500f5us.jpg",
-        "cpu": "AMD R5-5600H",
-        "ssd": "SSD 512GB NVMe",
-        "card": "AMD Radeon Graphics",
-        "man": "16 Inch 2.5K (2560x1600) 100% sRGB"
-      },
-      {
-        "name": "[New 100%] Laptop Gaming Asus TUF 2022 F15 FX507ZC-HN124W - Intel Core i7 12700H | RTX 3050 | 8GB DDR5",
-        "images": "https://laptop88.vn/media/product/7002_asus_tuf_2022_f15_fx507zc_hn124w.jpg",
-        "cpu": "Intel Core i7-12700H",
-        "ssd": "512GB M.2 NVMe™ PCIe® 3.0 SSD",
-        "card": "NVIDIA® GeForce RTX™ 3050 4GB DDR6",
-        "man": "15.6 Inch Full HD 144Hz IPS"
-      },
-      {
-        "name": "[New 100%] Laptop Microsoft Surface Pro 7 Plus | Intel Core i5-1135G7 | Kèm phím | NGUYÊN SEAL",
-        "images": "https://laptop88.vn/media/product/7984_ac___laptop_microsoft_surface_pro_7_plus_2.jpg",
-        "cpu": "Intel Core i5-1135G7",
-        "ssd": "SSD 128GB",
-        "card": "Intel Iris Xe",
-        "man": "12.3 Inch QHD"
-      },
-      {
-        "name": "[New 100%] Laptop Dell Inspiron 15 3511 R1605S - Intel Core i5 - 1135G7 | 15.6 Inch Full HD",
-        "images": "https://laptop88.vn/media/product/7896_ac_m___i_100__full_box_laptop_dell_inspiron_15_3511_r1605s_intel_core.jpg",
-        "cpu": "Intel Core i5 - 1135G7",
-        "ssd": "SSD 512GB",
-        "card": "Intel Iris Xe Graphics",
-        "man": "15.6 inch Full HD"
-      },
-      {
-        "name": "[New 100%] Laptop Gaming ASUS TUF Gaming A15 FA506ICB-HN355W - AMD Ryzen 5 - 4600H | RTX 3050 4GB | 15.6 Inch Full HD 144Hz",
-        "images": "https://laptop88.vn/media/product/7671_ac_m___i_100__full_box_laptop_gaming_asus_tuf_gaming_a15_fa506icb_hn355w.jpg",
-        "cpu": "AMD Ryzen 5 - 4600H",
-        "ssd": "SSD 512GB NVMe",
-        "card": "Nvidia GeForce RTX 3050 4GB",
-        "man": "15.6 Inch Full HD 144Hz"
-      }
-    ]
-  }
-  
+  "body": [
+    {
+      "name": "[New Outlet] Laptop Acer Nitro 5 AN515-58-5046 - Intel Core i5-12500H | RAM 16GB | Nvidia RTX 3050Ti | 15.6 Inch Full HD 144Hz",
+      "images": "https://laptop88.vn/media/product/6713_5046_new.jpg",
+      "price": "19.990.000Đ",
+      "cpu": "Intel Core i5-12500H",
+      "ssd": "SSD 512GB NVMe",
+      "card": "Nvidia RTX 3050Ti",
+      "screen": "15.6 Inch Full HD 144Hz"
+    },
+    {
+      "name": "[New 100%] Lenovo Legion 5 15IAH7 82RC008LVN - Intel Core i5 - 12500H | RTX 3050 | 15.6 Inch Full HD 100% sRGB 165Hz",
+      "images": "https://laptop88.vn/media/product/7036_ac___legion.jpg",
+      "price": "25.390.000Đ",
+      "cpu": "Intel Core i5 - 12500H",
+      "ssd": "SSD 512GB NVMe",
+      "card": "NVIDIA RTX 3050 4GB",
+      "screen": "15.6 Inch Full HD, 165Hz, 100% sRGB"
+    },
+    {
+      "name": "[New 100%] Laptop HP VICTUS 16-e1107AX 7C140PA - AMD Ryzen 5 - 6600H | 16GB | RTX 3050 4GB | 16.1 Inch Full HD 144hz",
+      "images": "https://laptop88.vn/media/product/6659_hp_victus_16_e1107ax_7c140pa.jpg",
+      "price": "18.990.000Đ",
+      "cpu": "AMD Ryzen 5-6600H",
+      "ssd": "SSD 512GB NMVe",
+      "card": "NVIDIA GeForce RTX 3050 4GB GDDR6",
+      "screen": "16.1 Inch Full HD 144Hz"
+    },
+    {
+      "name": "[New Outlet] Laptop Dell Inspiron 14 5425-VNYK0 | AMD R5-5625U | 16GB RAM | 14 inch Full HD+ Touch",
+      "images": "https://laptop88.vn/media/product/7765_ac_m___i_99__laptop_dell_inspiron_14_5425_amd_r5_5625u_16gb_ram_14__3_.jpg",
+      "price": "13.990.000Đ",
+      "cpu": "AMD Ryzen 5-5625U",
+      "ssd": "SSD 512GB",
+      "card": "AMD Radeon Vega Graphics",
+      "screen": "14 Inch Full HD+ Touch"
+    },
+    {
+      "name": "[New 100%] Laptop Gaming Acer Nitro 5 Eagle AN515-57-5669 | Intel Core i5-11400H | GTX 1650 | 144Hz",
+      "images": "https://laptop88.vn/media/product/4766_nitro_5_5669.jpg",
+      "price": "18.490.000Đ",
+      "cpu": "Intel Core i5 - 11400H",
+      "ssd": "SSD NVMe 512GB",
+      "card": "Nvidia Geforce GTX 1650 4GB",
+      "screen": "15.6 inch Full HD 144hz"
+    },
+    {
+      "name": "[New 100%] Laptop Gaming MSI GF63 Thin 11SC 664VN - Intel Core i5-11400H | GTX 1650 | 144Hz",
+      "images": "https://laptop88.vn/media/product/5809_anb_msi_gf63_thin_11sc_664vn_2.jpg",
+      "price": "16.490.000Đ",
+      "cpu": "Intel Core i5-11400H",
+      "ssd": "SSD 512GB NVMe",
+      "card": "Card rời GTX 1650 4GB GDDR6",
+      "screen": "15.6 Inch Full HD 144Hz"
+    },
+    {
+      "name": "[New 100%] Laptop MSI Sword 15 A12UC 295US - Intel Core i5 - 12450H | RTX 3050 | 15.6 Inch Full HD 144Hz",
+      "images": "https://laptop88.vn/media/product/8054_anb_msi_sword___gaming_m___i_2023__2_.jpg",
+      "price": "19.690.000Đ",
+      "cpu": "Intel Core i5 - 12450H",
+      "ssd": "SSD 512GB NMVe",
+      "card": "NVIDIA GeForce RTX 3050",
+      "screen": "15.6 Inch Full HD 144Hz"
+    },
+    {
+      "name": "[New 100%] Laptop Gaming GIGABYTE G5 GD 51VN123SO - Intel Core i5-11400H | RTX 3050 | 144Hz",
+      "images": "https://laptop88.vn/media/product/6817_gigabyte_g5_gd_51vn123so.jpg",
+      "price": "18.990.000Đ",
+      "cpu": "Intel Core i5-11400H",
+      "ssd": "SSD 512GB NVMe",
+      "card": "Nvidia RTX 3050 4GB",
+      "screen": "15.6 Inch Full HD 144hz"
+    },
+    {
+      "name": "[New 100%] Laptop Asus Zenbook Q409ZA-90NB0WC1 (2022) - Intel Core i5 1240P | Màn Oled 100% DCI-P3",
+      "images": "https://laptop88.vn/media/product/7318_ac_m___i_100__full_box_laptop_asus_zenbook_q409za_90nb0wc1_2022_intel.jpg",
+      "price": "14.590.000Đ",
+      "cpu": "Intel Core i5 1240P",
+      "ssd": "256GB M.2 PCIe NVMe",
+      "card": "Intel® Iris® Xe Graphics",
+      "screen": "14 inch OLED 2.8K 100% DCI - P3"
+    },
+    {
+      "name": "[New Outlet] Laptop Gaming Acer Nitro 5 AN517-55-5354 - Intel Core i5 - 12500H | RTX 3050 4GB | 17.3 Inch Full HD 144Hz",
+      "images": "https://laptop88.vn/media/product/7830_5354_1.jpg",
+      "price": "18.290.000Đ",
+      "cpu": "Intel Core i5 - 12500H",
+      "ssd": "SSD 512GB NVMe",
+      "card": "NVIDIA GeForce RTX 3050 4GB",
+      "screen": "17.3 Inch Full HD 144hz"
+    },
+    {
+      "name": "[New 100%] Laptop Lenovo Yoga 7 16IAP7-82QG0001US - Intel Core i5 - 1240P | 16 Inch 2K 100% sRGB 400nits",
+      "images": "https://laptop88.vn/media/product/8033_yoga.jpg",
+      "price": "16.990.000Đ",
+      "cpu": "Intel Core i5-1240P",
+      "ssd": "SSD 256GB NMVe",
+      "card": "Intel Iris Xe Graphics",
+      "screen": "16 Inch 2K 100% sRGB 400nits"
+    },
+    {
+      "name": "[New 100%] Laptop Gaming Gigabyte G5 MF E2VN333SH - Intel Core i5-12500H | RTX 4050 | 15.6 inch Full HD 144Hz",
+      "images": "https://laptop88.vn/media/product/8126_ac___gigabyte_g5_mf_e2vn333sh.jpg",
+      "price": "23.990.000Đ",
+      "cpu": "Intel Core i5-12500H",
+      "ssd": "SSD 512GB NMVe",
+      "card": "NVidia Geforce RTX 4050",
+      "screen": "15.6 Inch Full HD 144Hz"
+    },
+    {
+      "name": "[New 100%] Laptop Dell Vostro 3405 R1505D - AMD Ryzen 5 | 14 inch Full HD",
+      "images": "https://laptop88.vn/media/product/6881_dell_vostro_v3405___amd_ryzen_5.jpg",
+      "price": "10.990.000Đ",
+      "cpu": "AMD Ryzen 5 3500U",
+      "ssd": "SSD 256GB NVMe",
+      "card": "Card AMD Vega",
+      "screen": "14 Inch Full HD"
+    },
+    {
+      "name": "[New 100%] Laptop Lenovo IdeaPad 3 15ABA7 82RN0070VN - AMD Ryzen 5 - 5625U | 15.6 Inch Full HD",
+      "images": "https://laptop88.vn/media/product/7699_070vn.jpg",
+      "price": "12.190.000Đ",
+      "cpu": "AMD Ryzen 5 - 5625U",
+      "ssd": "SSD 512GB NMVe",
+      "card": "AMD Radeon Graphics",
+      "screen": "15.6 Inch Full HD"
+    },
+    {
+      "name": "[New 100%] Laptop HP Victus 15 FA0031DX 68U87UA (2022) - Intel Core i5-12450H | GTX 1650 | 15.6 Inch Full HD 144Hz",
+      "images": "https://laptop88.vn/media/product/7421_victus_15.jpg",
+      "price": "16.690.000Đ",
+      "cpu": "Intel Core i5-12450H",
+      "ssd": "SSD 512GB NVMe",
+      "card": "NVIDIA® GeForce® GTX 1650 4GB GDDR6",
+      "screen": "15.6 Inch Full HD 144Hz"
+    },
+    {
+      "name": "[New 100%] Laptop MSI Cyborg 15 A12VE 240VN - Intel Core i7 - 12650H | RTX 4050 | 15.6 Inch Full HD",
+      "images": "https://laptop88.vn/media/product/7968_msi_cyborg_15_a12ve_240vn.jpg",
+      "price": "27.490.000Đ",
+      "cpu": "Intel Core i7 - 12650H",
+      "ssd": "SSD 512GB NMVe",
+      "card": "Nvidia GeForce RTX 4050",
+      "screen": "15.6 Inch Full HD 144Hz"
+    },
+    {
+      "name": "[New 100%] Dell XPS 13 9315-F4GH8 Mới - i5-1230U | 13.4\" Full HD+",
+      "images": "https://laptop88.vn/media/product/7827_dell_xps_13_9315___i5_1230u.jpg",
+      "price": "22.990.000Đ",
+      "cpu": "Intel Core i5 - 1230U",
+      "ssd": "SSD 512GB NMVe",
+      "card": "Intel Iris Xe Graphics",
+      "screen": "13.4 Inch Full HD+ 500nits"
+    },
+    {
+      "name": "[New Outlet] Laptop HP Elitebook 840 G7 - Intel core i5 10310u | 16GB | 256GB",
+      "images": "https://laptop88.vn/media/product/8036_hp_elitebook_840_g7.jpg",
+      "price": "12.990.000Đ",
+      "cpu": "Intel Core i5 10310U",
+      "ssd": "SSD 256GB",
+      "card": "Card Intel® UHD Graphics",
+      "screen": "14 Inch Full HD"
+    },
+    {
+      "name": "[New Outlet] Laptop Acer Swift 3 SF314-512-52MZ - Intel Core i5 - 1240P | 14 Inch Full HD IPS 100%sRGB",
+      "images": "https://laptop88.vn/media/product/7831_ac_m___i_99__full_box_laptop_acer_swift_3_sf314_512_52mz_2.jpg",
+      "price": "13.290.000Đ",
+      "cpu": "Intel Core i5 - 1240P",
+      "ssd": "SSD 512GB NVMe",
+      "card": "Intel Iris Xe Graphics",
+      "screen": "14 Inch Full HD 100% sRGB"
+    },
+    {
+      "name": "[New 100%] Laptop MSI Gaming Katana GF66 12UC 699VN - Intel Core i5 - 12450H | RTX 3050",
+      "images": "https://laptop88.vn/media/product/7631_msi_gaming_katana_gf66_12uc_699vn.jpg",
+      "price": "20.990.000Đ",
+      "cpu": "Intel Core i5 - 12450H",
+      "ssd": "SSD 512GB NMVe",
+      "card": "Nvidia GeForce RTX 3050",
+      "screen": "15.6 Inch Full HD 144Hz"
+    },
+    {
+      "name": "[New 100%] Laptop Lenovo Ideapad Gaming 3 15ACH6 82K201XCUS - AMD Ryzen 5 - 5600H | RTX 3050 Ti | 15.6 Inch Full HD 120Hz",
+      "images": "https://laptop88.vn/media/product/6937_ac_m___i_100__full_box_laptop_lenovo_ideapad_gaming_3_15ach6_82k201xcus.jpg",
+      "price": "17.090.000Đ",
+      "cpu": "AMD Ryzen 5 - 5600H",
+      "ssd": "SSD 256GB NVMe",
+      "card": "NVIDIA GeForce RTX 3050Ti 4GB GDDR6",
+      "screen": "15.6 Inch Full HD IPS 120Hz"
+    },
+    {
+      "name": "[New 100%] Laptop MSI Gaming Bravo 15 B5DD-275VN - AMD Ryzen 7 - 5800H | Card rời RX5500M | 15.6 Inch Full HD",
+      "images": "https://laptop88.vn/media/product/5212_ac____new_100___laptop_msi_gaming_bravo_15_b5dd_275vn_2.jpg",
+      "price": "17.090.000Đ",
+      "cpu": "AMD Ryzen 7 - 5800H",
+      "ssd": "SSD 512GB NVMe",
+      "card": "Card rời RX5500M 4GB GDDR6",
+      "screen": "15.6 Inch Full HD IPS"
+    },
+    {
+      "name": "[New 100%] Laptop HP Pavilion x360 14-ek0013dx 691L0UA - Intel Core i3 - 1215U | 14 Inch Full HD [2022]",
+      "images": "https://laptop88.vn/media/product/7719_hp_pavilion_x360_i3_2022_anh_chinh.jpg",
+      "price": "11.690.000Đ",
+      "cpu": "Intel Core i3-1215U",
+      "ssd": "SSD 256GB NMVe",
+      "card": "Intel UHD Graphics",
+      "screen": "14 Inch Full HD Touch IPS"
+    },
+    {
+      "name": "[New Outlet] Laptop LG Gram 14 Lightweight 14ZB90Q-G.AAC6U1 - Intel Core i7-1260p | 14 Inch 2K WQXGA",
+      "images": "https://laptop88.vn/media/product/7987_lg_gram_14_lightweight_14zb90q_g_aac6u1.jpg",
+      "price": "21.990.000Đ",
+      "cpu": "Intel Core i7-1260P",
+      "ssd": "SSD 512GB NMVe",
+      "card": "Intel Iris Xe Graphics",
+      "screen": "14 Inch 2K WQXGA, 100% sRGB"
+    },
+    {
+      "name": "[New Outlet] Laptop Dell G16 7620 - Intel Core i7 - 12700H | RTX 3050Ti | 16 Inch QHD+ 100% sRGB",
+      "images": "https://laptop88.vn/media/product/8052_dell_g16_7620___intel_core_i7___12700h.jpg",
+      "price": "28.490.000Đ",
+      "cpu": "Intel Core i7 - 12700H",
+      "ssd": "SSD 512GB NMVe",
+      "card": "Nvidia RTX3050 Ti",
+      "screen": "16 Inch QHD+ 165Hz 100% sRGB"
+    },
+    {
+      "name": "[New Outlet] Laptop Dell Gaming G15 5520 - Intel Core i5 - 12500H | RTX 3050 | 15.6 Inch Full HD",
+      "images": "https://laptop88.vn/media/product/7698_dell_gaming_g15_5520___intel_core_i5___12500h.jpg",
+      "price": "19.690.000Đ",
+      "cpu": "Intel Core i5 - 12500H",
+      "ssd": "SSD 256GB NMVe",
+      "card": "Nvidia GeForce RTX3050",
+      "screen": "15.6 Inch Full HD 120Hz"
+    },
+    {
+      "name": "[New Outlet] Laptop Samsung Galaxy Book Pro 15 NP950XDB KC5US - Intel Core i7 | RAM 16GB | SSD 1TB | 15.6 Inch Full HD OLED",
+      "images": "https://laptop88.vn/media/product/6976_ac___laptop_samsung_galaxy_book_pro_15_np950xdb_kc5us__np930xdb_kb1us___intel_core_i7.jpg",
+      "price": "18.990.000Đ",
+      "cpu": "Intel Core i7-1165G7",
+      "ssd": "SSD 1TB NVMe",
+      "card": "Intel® Iris Xe Graphics",
+      "screen": "15.6 Inch Full HD AmOLED 370 nits 100% sRGB"
+    },
+    {
+      "name": "[New 100%] Laptop Dell Gaming G15 5525 691KP - AMD Ryzen 5 6600H | RTX 3050 4GB | 15.6 Inch Full HD 120Hz",
+      "images": "https://laptop88.vn/media/product/6695_ac___dell_g15_5525_691kp_2022.jpg",
+      "price": "19.990.000Đ",
+      "cpu": "AMD Ryzen 5 - 6600H",
+      "ssd": "SSD 512GB NVMe",
+      "card": "NVIDIA GeForce RTX 3050 4GB GDDR6",
+      "screen": "15.6 Inch Full HD 120Hz"
+    },
+    {
+      "name": "[Mới 100% Full Box] Laptop Lenovo IdeaPad 5 Pro 14IAP7 82SH000SVN - Intel Core i5 - 1240P | 14 Inch 2.8K",
+      "images": "https://laptop88.vn/media/product/7911_lenovo_ideapad_5_pro_14iap7_82sh000svn.jpg",
+      "price": "19.290.000Đ",
+      "cpu": "Intel Core i5 - 1240P",
+      "ssd": "SSD 512GB NMVe",
+      "card": "Intel Iris Xe Graphics",
+      "screen": "14 Inch 2.8K 100%sRGB"
+    },
+    {
+      "name": "[New 100%] Laptop MSI Modern 14 C13M 458VN - Intel Core i5 - 1335U | 14 Inch Full HD",
+      "images": "https://laptop88.vn/media/product/7966_ac____laptop_msi_modern_14_c13m_458vn_22.jpg",
+      "price": "17.490.000Đ",
+      "cpu": "Intel Core i5 - 1335U",
+      "ssd": "SSD 512GB NMVe",
+      "card": "Intel Iris Xe Graphics",
+      "screen": "14 Inch Full HD"
+    },
+    {
+      "name": "[New 100%] Laptop HP 250 G8 2R9H2EA - Intel Core i3",
+      "images": "https://laptop88.vn/media/product/6719_6518_hp_250_g8_389x8pa_1.jpg",
+      "price": "8.990.000Đ",
+      "cpu": "Intel Core i3-1005G1",
+      "ssd": "SSD 256GB",
+      "card": "Intel UHD Graphics",
+      "screen": "15.6 Inch HD"
+    },
+    {
+      "name": "[New 100%] Laptop Ideapad 5 Pro 16ARH7 82SN003LVN - AMD Ryzen 5 - 6600HS | GTX1650 4GB | 16 Inch 2.5K WQXGA",
+      "images": "https://laptop88.vn/media/product/7975_ac___laptop_ideapad_5_pro_16arh7_82sn003lvn_2.jpg",
+      "price": "21.290.000Đ",
+      "cpu": "AMD Ryzen 5 - 6600HS",
+      "ssd": "SSD 512GB NMVe",
+      "card": "NVIDIA GeForce GTX 1650",
+      "screen": "16 Inch 2.5K WQXGA"
+    },
+    {
+      "name": "[New 100%] Laptop Asus TUF Dash 2022 F15 FX517ZC HN077W - Intel Core i5 12450H | RTX 3050 | RAM 8GB DDR5",
+      "images": "https://laptop88.vn/media/product/7008_ac_m___i_100__full_box_laptop_asus_tuf_dash_2022_f15_fx517zc_hn077w__2_.jpg",
+      "price": "20.990.000Đ",
+      "cpu": "Intel Core i5-12450H",
+      "ssd": "SSD 512GB NVMe",
+      "card": "NVIDIA® GeForce RTX™ 3050 4GB GDDR6",
+      "screen": "15.6 Inch Full HD 144Hz"
+    },
+    {
+      "name": "[New 100%] Laptop Dell Inspiron 3520 N5I5122W1 - Intel Core i5-1235U | 15.6 Inch Full HD 120Hz",
+      "images": "https://laptop88.vn/media/product/7603_dell_inspiron_3520_n5i5122w1.jpg",
+      "price": "15.690.000Đ",
+      "cpu": "Intel Core i5-1235U",
+      "ssd": "SSD 256GB NMVe",
+      "card": "Intel UHD | Iris Xe Graphics",
+      "screen": "15.6 Inch Full HD 120Hz"
+    },
+    {
+      "name": "[New 100%] Laptop Gaming MSI Katana 15 B13VEK 252VN | Intel Core i7-13620H | RTX 4050 6GB | 144Hz",
+      "images": "https://laptop88.vn/media/product/7986_msi_katana_15_b13vek_252vn.jpg",
+      "price": "33.490.000Đ",
+      "cpu": "Intel Core i7-13620H",
+      "ssd": "SSD 512GB NVMe",
+      "card": "Nvidia Geforce RTX 4050",
+      "screen": "15.6 inch Full HD 144Hz"
+    },
+    {
+      "name": "[New Outlet] Laptop Lenovo IdeaPad 5 Pro 16ACH6 82L500F5US - AMD Ryzen 5-5600H | 16 Inch WQXGA 100% sRGB",
+      "images": "https://laptop88.vn/media/product/6965_lenovo_ideapad_5_pro_16ach6_82l500f5us.jpg",
+      "price": "14.590.000Đ",
+      "cpu": "AMD R5-5600H",
+      "ssd": "SSD 512GB NVMe",
+      "card": "AMD Radeon Graphics",
+      "screen": "16 Inch 2.5K (2560x1600) 100% sRGB"
+    },
+    {
+      "name": "[New 100%] Laptop Gaming Asus TUF 2022 F15 FX507ZC-HN124W - Intel Core i7 12700H | RTX 3050 | 8GB DDR5",
+      "images": "https://laptop88.vn/media/product/7002_asus_tuf_2022_f15_fx507zc_hn124w.jpg",
+      "price": "25.990.000Đ",
+      "cpu": "Intel Core i7-12700H",
+      "ssd": "512GB M.2 NVMe™ PCIe® 3.0 SSD",
+      "card": "NVIDIA® GeForce RTX™ 3050 4GB DDR6",
+      "screen": "15.6 Inch Full HD 144Hz IPS"
+    },
+    {
+      "name": "[New 100%] Laptop Microsoft Surface Pro 7 Plus | Intel Core i5-1135G7 | Kèm phím | NGUYÊN SEAL",
+      "images": "https://laptop88.vn/media/product/7984_ac___laptop_microsoft_surface_pro_7_plus_2.jpg",
+      "price": "17.990.000Đ",
+      "cpu": "Intel Core i5-1135G7",
+      "ssd": "SSD 128GB",
+      "card": "Intel Iris Xe",
+      "screen": "12.3 Inch QHD"
+    },
+    {
+      "name": "[New 100%] Laptop Dell Inspiron 15 3511 R1605S - Intel Core i5 - 1135G7 | 15.6 Inch Full HD",
+      "images": "https://laptop88.vn/media/product/7896_ac_m___i_100__full_box_laptop_dell_inspiron_15_3511_r1605s_intel_core.jpg",
+      "price": "14.990.000Đ",
+      "cpu": "Intel Core i5 - 1135G7",
+      "ssd": "SSD 512GB",
+      "card": "Intel Iris Xe Graphics",
+      "screen": "15.6 inch Full HD"
+    },
+    {
+      "name": "[New 100%] Laptop Gaming ASUS TUF Gaming A15 FA506ICB-HN355W - AMD Ryzen 5 - 4600H | RTX 3050 4GB | 15.6 Inch Full HD 144Hz",
+      "images": "https://laptop88.vn/media/product/7671_ac_m___i_100__full_box_laptop_gaming_asus_tuf_gaming_a15_fa506icb_hn355w.jpg",
+      "price": "17.890.000Đ",
+      "cpu": "AMD Ryzen 5 - 4600H",
+      "ssd": "SSD 512GB NVMe",
+      "card": "Nvidia GeForce RTX 3050 4GB",
+      "screen": "15.6 Inch Full HD 144Hz"
+    }
+  ]
+}
