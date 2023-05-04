@@ -47,7 +47,7 @@ const Login = () => {
           if(res.data === 1){
             navigate("/");
           }else{
-            alert("No record existed");
+            alert("Tài khoản sai rồi , nhập lại đi !!!");
           }
         })
         .catch((err) => console.log(err));
