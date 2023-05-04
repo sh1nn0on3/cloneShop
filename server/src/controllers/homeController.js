@@ -19,11 +19,18 @@ let signIn = async (req, res) => {
     }
 }
 
-let getProductInformationById = (req,res) => {
+let getAllData = async (req,res) => {
+   try{
+        let data  = await db.Product.findAll()
+        console.log(typeof data)
+        return res.json(data)
+   }catch(e){
+    console.log(e);
+   }
 
 }
 module.exports = {
     signUp: signUp,
     signIn: signIn,
-    getProductInformationById: getProductInformationById,
+    getAllData: getAllData
 }

@@ -8,7 +8,9 @@ let initWebRoutes = (app) => {
 
    router.post('/sign-up',homeController.signUp);
 
-   router.post("/sign-in",homeController.signIn)
+   router.post("/sign-in",homeController.signIn);
+
+   router.get('/get-data',homeController.getAllData);
 
     return app.use('/',router);
 }
