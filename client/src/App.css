@@ -1,5 +1,9 @@
 * {
-    /* font-family: 'Brygada 1918', serif; */
-    font-family: 'Montserrat', sans-serif;
-    /* font-family: 'Roboto', sans-serif; */
+  /* font-family: 'Brygada 1918', serif; */
+  /* font-family: 'Montserrat', sans-serif; */
+  font-family: "Roboto", sans-serif;
+}
+
+.animation-1000 {
+  animation-delay: 1s;
 }
