@@ -1,6 +1,7 @@
 import db from '../models/index'
 import allServices from '../services/allServices'
-
+import jwt from 'jsonwebtoken'
+import cookieParser from 'cookie-parser'
 
 let signUp = async (req,res) => {
     let message = await allServices.createUser(req.body)
@@ -29,8 +30,16 @@ let getAllData = async (req,res) => {
    }
 
 }
+
+let getProductById = async (req,res) => {
+    let data = await db.Product.findOne({
+        where: { id: req.body.id }
+    })
+    res.json(data)
+}
 module.exports = {
     signUp: signUp,
     signIn: signIn,
-    getAllData: getAllData
+    getAllData: getAllData,
+    getProductById: getProductById
 }

@@ -1,5 +1,14 @@
 import bodyParser from "body-parser";
 import db from "../models/index"
+import jwt from 'jsonwebtoken'
+import cookieParser from 'cookie-parser'
+// import document from 'jsdom'
+ require('dotenv').config()
+
+
+ 
+
+  
  
 let createUser = (data) => {
     return new Promise(async (resolve,reject) => {
@@ -30,6 +39,7 @@ let createUser = (data) => {
 let logIn = async (data) => {
     let userEmail = data.email
     let userPassword = data.password
+    let key = process.env.SECRET_KEY
     return new Promise(async (resolve, reject) => {
         try{
             if(!userEmail||!userPassword){
@@ -51,7 +61,7 @@ let logIn = async (data) => {
                     if(userPassword === user.password){
                         resolve({
                             errCode: 0,
-                            message: "Log in success"
+                            message: "Log in success",
                         })
                     }else{
                         resolve({
@@ -72,4 +82,5 @@ let logIn = async (data) => {
 module.exports = {
     createUser: createUser,
     logIn: logIn,
+    
 }
