@@ -14,6 +14,10 @@ let initWebRoutes = (app) => {
 
    router.get('/get-product-data',homeController.getProductById)
 
+   router.post('/add-history',homeController.addProduct)
+
+   router.get('/get-history',homeController.getHistoryById)
+
     return app.use('/',router);
 }
 module.exports = initWebRoutes;

@@ -79,8 +79,20 @@ let logIn = async (data) => {
 }
 
 
+let addToHistory =async (data) => {
+   try{
+    await db.History.create({
+        userId : userID,
+        productId : productId
+    })
+   }catch(e){
+    console.log(e)
+   }
+}
+
 module.exports = {
     createUser: createUser,
     logIn: logIn,
+    addToHistory: addToHistory
     
 }
