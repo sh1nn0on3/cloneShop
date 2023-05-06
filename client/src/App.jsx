@@ -5,6 +5,7 @@ import Login from "./pages/Login";
 import Header from "./components/layout/Header";
 import Footer from "./components/layout/Footer";
 import Home from "./pages/Home";
+import ProductDetail from "./pages/ProductDetail";
 
 function App() {
   const Layout = () => {
@@ -25,6 +26,10 @@ function App() {
         {
           path: "/",
           element: <Home />,
+        },
+        {
+          path: "/product",
+          element: <ProductDetail />,
         },
       ],
     },

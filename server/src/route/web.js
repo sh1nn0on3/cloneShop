@@ -12,7 +12,7 @@ let initWebRoutes = (app) => {
 
    router.get('/get-data',homeController.getAllData);
 
-   router.get('/get-product-data',homeController.getProductById)
+   router.post('/get-product-data',homeController.getProductById)
 
     return app.use('/',router);
 }
