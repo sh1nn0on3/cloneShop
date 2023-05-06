@@ -31,6 +31,21 @@ let getAllData = async (req,res) => {
 
 }
 
+let addProduct =async (req,res) => {
+    await allServices.addToHistory(req.body)
+    res.send("Add success")
+}
+
+
+let getHistoryById = async (req,res) => {
+    let id = req.body
+    let data = await db.History.findAll({
+        where : { id: id }
+    })
+    console.log(data)
+    res.send("test")
+}
+
 let getProductById = async (req,res) => {
     let data = await db.Product.findOne({
         where: { id: req.body.id || null }
@@ -41,5 +56,7 @@ module.exports = {
     signUp: signUp,
     signIn: signIn,
     getAllData: getAllData,
-    getProductById: getProductById
+    getProductById: getProductById,
+    getHistoryById: getHistoryById,
+    addProduct: addProduct
 }
