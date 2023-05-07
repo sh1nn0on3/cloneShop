@@ -6,6 +6,8 @@ import Header from "./components/layout/Header";
 import Footer from "./components/layout/Footer";
 import Home from "./pages/Home";
 import ProductDetail from "./pages/ProductDetail";
+import AuthUserProvider from "./components/contexts/auth-context";
+import ProductProvider from "./components/contexts/product-context";
 
 function App() {
   const Layout = () => {
@@ -46,7 +48,11 @@ function App() {
   return (
     <>
       <div className="">
-        <RouterProvider router={router} />
+        <AuthUserProvider>
+          <ProductProvider>
+            <RouterProvider router={router} />
+          </ProductProvider>
+        </AuthUserProvider>
       </div>
     </>
   );

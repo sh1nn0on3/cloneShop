@@ -1,4 +1,26 @@
+import { useNavigate } from "react-router-dom";
+import { AuthUserContext } from "../contexts/auth-context";
+import { useContext, useState } from "react";
+
 const Header = () => {
+  const [headerData, setHeaderData] = useState({
+    data1: "Đăng ký",
+    data2: "Đăng Nhập",
+  });
+
+  const [authUser] = useContext(AuthUserContext);
+  console.log("🚀 ~ file: Header.jsx:12 ~ Header ~ authUser:", authUser);
+  const navigate = useNavigate();
+
+  const handleData1 = () => {
+    navigate("/register")
+  };
+
+  const handleData2 = () => {
+    navigate("/login")
+
+  };
+
   return (
     <>
       <div className="header-top">
@@ -7,7 +29,10 @@ const Header = () => {
             <img
               src="https://laptop88.vn/media/banner/logo_logo882022.png"
               alt="#"
-              className="w-60 leading-[80px]  "
+              className="w-60 leading-[80px] cursor-pointer "
+              onClick={() => {
+                navigate("/");
+              }}
             />
             <div className="flex">
               <input
@@ -54,18 +79,19 @@ const Header = () => {
               </p>
             </div>
             <div className="flex flex-col gap-1">
-              <a
-                href="#"
-                className="font-sans bg-[#ff9500] text-black rounded-[16px]  px-5 py-1"
-              >
-                Chính sách
-              </a>
-              <a
-                href="#"
-                className="font-sans bg-[#ff9500] text-black rounded-[16px]  px-5 py-1"
-              >
-                Tuyển dụng
-              </a>
+              <div className="rounded-[16px]  px-5 py-1 bg-[#ff9500] flex justify-center">
+                <button
+                  className="font-sans text-center text-black"
+                  onClick={handleData1}
+                >
+                  {headerData.data1}
+                </button>
+              </div>
+              <div className="rounded-[16px]  px-5 py-1 bg-[#ff9500] flex justify-center">
+                <button className="font-sans  text-black" onClick={handleData2}>
+                  {headerData.data2}
+                </button>
+              </div>
             </div>
           </div>
         </div>

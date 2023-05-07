@@ -40,7 +40,7 @@ let addProduct =async (req,res) => {
 let getHistoryById = async (req,res) => {
     let id = req.body
     let data = await db.History.findAll({
-        where : { id: id }
+        where : { id: id || null }
     })
     console.log(data)
     res.send("test")

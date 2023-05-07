@@ -1,9 +1,16 @@
 import axios from "axios";
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
+import { AuthUserContext } from "../components/contexts/auth-context";
 
 const Product = () => {
   const [data, setData] = useState([]);
-  console.log("🚀 ~ file: Product.jsx:6 ~ Product ~ data:", data);
+  // console.log("🚀 ~ file: Product.jsx:6 ~ Product ~ data:", data);
+
+  const navigate = useNavigate();
+  const [authUser, setAuthUser] = useContext(AuthUserContext);
+  // console.log("🚀 ~ file: Product.jsx:12 ~ Product ~ authUser:", authUser);
+
   const apiData = "http://localhost:8000/get-data";
   useEffect(() => {
     axios
@@ -22,47 +29,68 @@ const Product = () => {
         <div className="list-product grid grid-cols-5 gap-5">
           {data.map((item, index) => (
             <div key={index} className="product bg-white h-[600px] rounded-lg">
-              <div className="product-img w-full ">
-                <a href="#"></a>
+              <div className="product-img w-full cursor-pointer">
+                {/* <a href="#"></a> */}
                 <img
                   src={item.image}
                   alt=""
+                  onClick={() => {
+                    setAuthUser({
+                      id : item.id
+                    });
+                    navigate("/product")
+                  }}
                 />
               </div>
               <div className="product-info flex flex-col gap-4 w-full h-[300px] ">
-                <div className="product-title w-full mt-5 h text-center overflow-hidden text-ellipsis line-clamp-2 px-2 hover:text-[#ff9300] ">
-                  <a href="#">
+                <div className="product-title w-full mt-5 cursor-pointer text-center text-gray-700 overflow-hidden text-ellipsis line-clamp-2 px-2 hover:text-[#ff9300] ">
+                  <b
+                    onClick={() => {
+                      setAuthUser({
+                        id : item.id
+                      });
+                      navigate("/product")
+                    }}
+                  >
                     {item.name}
-                  </a>
+                  </b>
                 </div>
                 <div className="product-promotion px-4">
                   <table>
                     <tbody>
                       <tr className="h-8">
                         <td className="w-20">Cpu</td>
-                        <td className="overflow-hidden text-ellipsis line-clamp-2">{item.cpu}</td>
+                        <td className="overflow-hidden text-ellipsis line-clamp-2">
+                          {item.cpu}
+                        </td>
                       </tr>
                       <tr className="h-8">
                         <td>Ổ cứng</td>
-                        <td className="overflow-hidden text-ellipsis line-clamp-2">{item.ssd}</td>
+                        <td className="overflow-hidden text-ellipsis line-clamp-2">
+                          {item.ssd}
+                        </td>
                       </tr>
                       <tr className="h-8">
                         <td>Card</td>
-                        <td className="overflow-hidden text-ellipsis line-clamp-2">{item.card}</td>
+                        <td className="overflow-hidden text-ellipsis line-clamp-2">
+                          {item.card}
+                        </td>
                       </tr>
                       <tr className="h-8">
                         <td>M.Hình</td>
-                        <td className="overflow-hidden text-ellipsis line-clamp-2">{item.screen}</td>
+                        <td className="overflow-hidden text-ellipsis line-clamp-2">
+                          {item.screen}
+                        </td>
                       </tr>
                     </tbody>
                   </table>
                 </div>
               </div>
-                <div className="product-price w-full flex justify-center items-center ">
-                  <span className="py-2 px-8 border bg-[#ff9300] text-[20px] font-semibold text-gray-600 rounded-3xl ">
-                    {item.price}
-                  </span>
-                </div>
+              <div className="product-price w-full flex justify-center items-center ">
+                <span className="py-2 px-8 border bg-[#ff9300] text-[20px] font-semibold text-white rounded-3xl ">
+                  {item.price}
+                </span>
+              </div>
             </div>
           ))}
         </div>

@@ -49,7 +49,7 @@ const FooterTop = () => {
                 </div>
             </div>
 
-            <div className="flex justify-center mx-auto max-w-[1300px] items-center gap-4 py-5 ">
+            <div className="flex justify-between mx-auto max-w-[1300px] items-center py-5 ">
                 <div className="">
                     <img src="https://laptop88.vn/media/banner/14_Feb106fb2e4fa26a8e9108f6868c4a0ab9e.png" alt="#" />
                 </div>

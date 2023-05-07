@@ -1,17 +1,20 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import Form from "./Form";
 import { useNavigate } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import isEmpty from "validator/lib/isEmpty";
 import isEmail from "validator/lib/isEmail";
 import axios from "axios";
+import { AuthUserContext } from "../components/contexts/auth-context";
 
 const Login = () => {
   const [input, setInput] = useState({
     email: "",
     password: "",
   });
-  console.log("🚀 ~ file: Login.jsx:13 ~ Login ~ input:", input);
+
+  const [authUser, setAuthUser] = useContext(AuthUserContext)
+
   const [validateMsg, setValidateMsg] = useState({});
 
   const navigate = useNavigate();
@@ -44,9 +47,12 @@ const Login = () => {
       await axios
         .post("http://localhost:8000/sign-in", input)
         .then((res) => {
-          if(res.data === 1){
+          console.log("🚀 ~ file: Login.jsx:51 ~ .then ~ res:", res)
+          if (res.data === 1) {
+            console.log("🚀 ~ file: Login.jsx:52 ~ .then ~ res:", res)
+            setAuthUser(res.data)
             navigate("/");
-          }else{
+          } else {
             alert("Tài khoản sai rồi , nhập lại đi !!!");
           }
         })
