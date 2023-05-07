@@ -8,6 +8,10 @@ let initWebRoutes = (app) => {
 
    router.post('/sign-up',homeController.signUp);
 
+   router.get("/sign-in",(req,res) => {
+    res.send("SIgn in")
+   })
+
    router.post("/sign-in",homeController.signIn);
 
    router.get('/get-data',homeController.getAllData);
@@ -16,7 +20,9 @@ let initWebRoutes = (app) => {
 
    router.post('/add-history',homeController.addProduct)
 
-   router.get('/get-history',homeController.getHistoryById)
+   router.post('/get-history',homeController.getHistoryById)
+
+   router.get('/logout',homeController.logOut)
 
     return app.use('/',router);
 }

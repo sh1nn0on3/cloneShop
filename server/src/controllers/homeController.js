@@ -2,6 +2,9 @@ import db from '../models/index'
 import allServices from '../services/allServices'
 import jwt from 'jsonwebtoken'
 import cookieParser from 'cookie-parser'
+import user from '../models/user'
+import product from '../models/product'
+import { where } from 'sequelize'
 
 let signUp = async (req,res) => {
     let message = await allServices.createUser(req.body)
@@ -32,18 +35,31 @@ let getAllData = async (req,res) => {
 }
 
 let addProduct =async (req,res) => {
-    await allServices.addToHistory(req.body)
-    res.send("Add success")
+   let userId = req.body.userId
+   let index = req.body.index
+    await db.History.create({
+    userId: userId,
+    index: index
+   })
+   res.send("Add successfully")
 }
 
 
 let getHistoryById = async (req,res) => {
-    let id = req.body
-    let data = await db.History.findAll({
-        where : { id: id }
-    })
-    console.log(data)
-    res.send("test")
+   let userId = req.body.userId
+   let data = await db.History.findAll({
+    where : { userId : userId},
+    raw: true
+   })
+   let history = []
+   for(let index of data){
+       history.push( await db.Product.findOne({
+            where : { id : index.productId},
+            raw: true
+       }))
+   }
+   console.log(history)
+   res.send("Success")
 }
 
 let getProductById = async (req,res) => {
@@ -52,11 +68,16 @@ let getProductById = async (req,res) => {
     })
     res.json(data)
 }
+
+let logOut = (req,res) => {
+    res.redirect('/sign-in')
+}
 module.exports = {
     signUp: signUp,
     signIn: signIn,
     getAllData: getAllData,
     getProductById: getProductById,
     getHistoryById: getHistoryById,
-    addProduct: addProduct
+    addProduct: addProduct,
+    logOut: logOut
 }
