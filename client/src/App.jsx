@@ -8,6 +8,8 @@ import Home from "./pages/Home";
 import ProductDetail from "./pages/ProductDetail";
 import AuthUserProvider from "./components/contexts/auth-context";
 import ProductProvider from "./components/contexts/product-context";
+import CartShop from "./pages/CartShop";
+import History from "./pages/History";
 
 function App() {
   const Layout = () => {
@@ -32,6 +34,14 @@ function App() {
         {
           path: "/product",
           element: <ProductDetail />,
+        },
+        {
+          path: "/cart",
+          element: <CartShop />,
+        },
+        {
+          path: "/history",
+          element: <History />,
         },
       ],
     },

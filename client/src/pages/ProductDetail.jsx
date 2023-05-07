@@ -1,13 +1,15 @@
 import axios from "axios";
 import { useContext, useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import FooterTop from "./FooterTop";
 import { AuthUserContext } from "../components/contexts/auth-context";
 
 const ProductDetail = () => {
   const [demo, setDemo] = useState([]);
-  
+
   const [authUser] = useContext(AuthUserContext);
+
+  const navigate = useNavigate();
 
   useEffect(() => {
     axios
@@ -229,28 +231,35 @@ const ProductDetail = () => {
                   </div>
                   <div className="buy mt-3">
                     <div className="buy-now flex items-center gap-3">
-                      <div className="add w-full p-2 flex flex-col justify-center items-center bg-[#ff7000] hover:bg-[#ff9300] transition-all rounded-xl  ">
-                        <button
+                      <button
+                        onClick={() => {
+                          navigate("/cart");
+                        }}
+                        className="add w-full p-2 flex flex-col justify-center items-center bg-[#ff7000] hover:bg-[#ff9300] transition-all rounded-xl  "
+                      >
+                        <span
                           className="font-semibold text-white"
                           onClick={() => {}}
                         >
                           Thêm Vào Giỏ Hàng
-                        </button>
+                        </span>
                         <span className="text-sm text-white ">
                           (Thêm vào ở đây)
                         </span>
-                      </div>
-                      <div className="add w-full p-2 flex flex-col justify-center items-center bg-[#ff7000] hover:bg-[#ff9300] transition-all rounded-xl  ">
-                        <button
-                          className="font-semibold text-white"
-                          onClick={() => {}}
-                        >
+                      </button>
+                      <button
+                        onClick={() => {
+                          navigate("/cart");
+                        }}
+                        className="add w-full p-2 flex flex-col justify-center items-center bg-[#ff7000] hover:bg-[#ff9300] transition-all rounded-xl  "
+                      >
+                        <span className="font-semibold text-white">
                           Mua Ngay
-                        </button>
+                        </span>
                         <span className="text-sm text-white">
                           (Giao tận nơi )
                         </span>
-                      </div>
+                      </button>
                     </div>
                   </div>
                 </div>
@@ -272,12 +281,12 @@ const ProductDetail = () => {
                     <p>✅ Giá ở trên đã bao gồm 10% VAT</p>
                     <p>✅ MIỄN PHÍ GIAO HÀNG TẬN NHÀ</p>
                     <p>
-                      - Với đơn hàng từ 4.000.000 đồng: Miễn phí giao hàng cho đơn
-                      hàng 5km tính từ cửa hàng Laptop88 gần nhất
+                      - Với đơn hàng từ 4.000.000 đồng: Miễn phí giao hàng cho
+                      đơn hàng 5km tính từ cửa hàng Laptop88 gần nhất
                     </p>
                     <p>
-                      - Với đơn hàng trên 4.000.000 đồng: Miễn phí giao hàng (khách
-                      hàng chịu phí bảo hiểm hàng hóa nếu có)
+                      - Với đơn hàng trên 4.000.000 đồng: Miễn phí giao hàng
+                      (khách hàng chịu phí bảo hiểm hàng hóa nếu có)
                     </p>
                   </div>
                 </div>
@@ -293,7 +302,10 @@ const ProductDetail = () => {
                   </div>
                 </div>
                 <div className="banner-sale-detail">
-                  <img src="https://laptop88.vn/template/giaodien_2022/images/banner-right-detail.png" alt="" />
+                  <img
+                    src="https://laptop88.vn/template/giaodien_2022/images/banner-right-detail.png"
+                    alt=""
+                  />
                 </div>
               </div>
             </div>
