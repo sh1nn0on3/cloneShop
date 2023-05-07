@@ -58,8 +58,7 @@ let getHistoryById = async (req,res) => {
             raw: true
        }))
    }
-   console.log(history)
-   res.send("Success")
+   res.json(history)
 }
 
 let getProductById = async (req,res) => {
