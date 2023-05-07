@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 const Product = () => {
   const [data, setData] = useState([]);
   console.log("🚀 ~ file: Product.jsx:6 ~ Product ~ data:", data);
-  const apiData = "http://localhost:8001/get-data";
+  const apiData = "http://localhost:8000/get-data";
   useEffect(() => {
     axios
       .get(apiData)

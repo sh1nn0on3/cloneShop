@@ -64,7 +64,7 @@ let getHistoryById = async (req,res) => {
 
 let getProductById = async (req,res) => {
     let data = await db.Product.findOne({
-        where: { id: req.body.id }
+        where: { id: req.body.id || null }
     })
     res.json(data)
 }

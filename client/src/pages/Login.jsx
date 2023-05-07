@@ -11,7 +11,7 @@ const Login = () => {
     email: "",
     password: "",
   });
-  // console.log("🚀 ~ file: Login.jsx:13 ~ Login ~ input:", input);
+  console.log("🚀 ~ file: Login.jsx:13 ~ Login ~ input:", input);
   const [validateMsg, setValidateMsg] = useState({});
 
   const navigate = useNavigate();

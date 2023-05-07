@@ -1,7 +1,7 @@
 import bodyParser from "body-parser";
 import db from "../models/index"
-import jwt from 'jsonwebtoken'
-import cookieParser from 'cookie-parser'
+// import jwt from 'jsonwebtoken'
+// import cookieParser from 'cookie-parser'
 // import document from 'jsdom'
  require('dotenv').config()
 
