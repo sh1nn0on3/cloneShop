@@ -4,7 +4,8 @@ export const AuthUserContext = createContext();
 
 const AuthUserProvider = (props) => {
   const [authUser, setAuthUser] = useState({
-    id: "1",
+    email:"",
+    data:"",
   });
 
   return (

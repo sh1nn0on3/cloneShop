@@ -23,6 +23,19 @@ let signIn = async (req, res) => {
     }
 }
 
+let getUser = async (req,res) => {
+    try{
+         let data  = await db.User.findOne({
+            where: { email: req.body.email || null }
+         })
+         console.log(typeof data)
+         return res.json(data)
+    }catch(e){
+     console.log(e);
+    }
+ 
+ }
+
 let getAllData = async (req,res) => {
    try{
         let data  = await db.Product.findAll()
@@ -46,14 +59,14 @@ let addProduct =async (req,res) => {
 
 
 let getHistoryById = async (req,res) => {
-<<<<<<< HEAD
-    let id = req.body
-    let data = await db.History.findAll({
-        where : { id: id || null }
-    })
-    console.log(data)
-    res.send("test")
-=======
+// <<<<<<< HEAD
+//     let id = req.body
+//     let data = await db.History.findAll({
+//         where : { id: id || null }
+//     })
+//     console.log(data)
+//     res.send("test")
+// =======
    let userId = req.body.userId
    let data = await db.History.findAll({
     where : { userId : userId},
@@ -67,7 +80,7 @@ let getHistoryById = async (req,res) => {
        }))
    }
    res.json(history)
->>>>>>> ff0e7cf4061c98e1ecc2610aedad1a8c501f6d08
+// >>>>>>> ff0e7cf4061c98e1ecc2610aedad1a8c501f6d08
 }
 
 let getProductById = async (req,res) => {
@@ -84,6 +97,7 @@ module.exports = {
     signUp: signUp,
     signIn: signIn,
     getAllData: getAllData,
+    getUser : getUser,
     getProductById: getProductById,
     getHistoryById: getHistoryById,
     addProduct: addProduct,

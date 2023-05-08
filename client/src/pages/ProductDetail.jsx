@@ -2,29 +2,31 @@ import axios from "axios";
 import { useContext, useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import FooterTop from "./FooterTop";
-import { AuthUserContext } from "../components/contexts/auth-context";
+import { ProductContext } from "../components/contexts/product-context";
 
 const ProductDetail = () => {
+  window.scrollTo(0, 0);
   const [demo, setDemo] = useState([]);
 
-  const [authUser] = useContext(AuthUserContext);
-
+  const [productDetail] = useContext(ProductContext);
+  
   const navigate = useNavigate();
 
   useEffect(() => {
     axios
-      .post("http://localhost:8000/get-product-data", authUser)
+      .post("http://localhost:8000/get-product-data", productDetail)
       .then((items) => {
         setDemo(items.data);
       })
       .catch((error) => console.log(error));
-  }, [authUser]);
+  }, [productDetail]);
 
   // const filterProduct = demo.filter((props) => props.id === 10 )
   // console.log("🚀 ~ file: ProductDetail.jsx:18 ~ ProductDetail ~ filterProduct:", filterProduct)
 
   return (
     <>
+    
       <div className="bg-slate-50">
         <div className="max-w-[1300px] mx-auto flex flex-col gap-2 border-t-2 border-slate-50">
           <div className="row  flex h-8 items-center">

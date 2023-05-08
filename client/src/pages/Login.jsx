@@ -13,7 +13,7 @@ const Login = () => {
     password: "",
   });
 
-  const [authUser, setAuthUser] = useContext(AuthUserContext)
+  const [authUser, setAuthUser] = useContext(AuthUserContext);
 
   const [validateMsg, setValidateMsg] = useState({});
 
@@ -47,10 +47,10 @@ const Login = () => {
       await axios
         .post("http://localhost:8000/sign-in", input)
         .then((res) => {
-          console.log("🚀 ~ file: Login.jsx:51 ~ .then ~ res:", res)
+          console.log("🚀 ~ file: Login.jsx:51 ~ .then ~ res:", res.config.data);
           if (res.data === 1) {
-            console.log("🚀 ~ file: Login.jsx:52 ~ .then ~ res:", res)
-            setAuthUser(res.data)
+            console.log("🚀 ~ file: Login.jsx:52 ~ .then ~ res:", res);
+            setAuthUser((prev) => ({  ...prev , email:JSON.parse(res.config.data).email , data: res.data }));
             navigate("/");
           } else {
             alert("Tài khoản sai rồi , nhập lại đi !!!");

@@ -1,24 +1,54 @@
 import { useNavigate } from "react-router-dom";
 import { AuthUserContext } from "../contexts/auth-context";
-import { useContext, useState } from "react";
+import { useContext, useEffect, useState } from "react";
+import axios from "axios";
 
 const Header = () => {
   const [headerData, setHeaderData] = useState({
     data1: "Đăng ký",
     data2: "Đăng Nhập",
   });
+  const [name, setName] = useState("abc");
+  // console.log("🚀 ~ file: Header.jsx:12 ~ Header ~ name:", name)
 
-  const [authUser] = useContext(AuthUserContext);
-  console.log("🚀 ~ file: Header.jsx:12 ~ Header ~ authUser:", authUser);
+  const [authUser, setAuthUser] = useContext(AuthUserContext);
   const navigate = useNavigate();
 
+  useEffect(() => {
+    axios
+      .post("http://localhost:8000/get-user", authUser.email)
+      .then((res) => {
+        console.log("🚀 ~ file: Header.jsx:21 ~ useEffect ~ res:", res)
+        return setName(res.name)
+      })
+      .catch((err) => console.log(err));
+
+    if (authUser.data === 1) {
+      setHeaderData((prev) => ({ ...prev, data1: "Xin chào" }));
+      setHeaderData((prev) => ({ ...prev, data2: "Đăng Xuất" }));
+    }else{
+      setHeaderData((prev) => ({ ...prev, data1: "Đăng Ký" }));
+      setHeaderData((prev) => ({ ...prev, data2: "Đăng Nhập" }));
+    }
+
+    return () => {};
+  }, [authUser.email , authUser.data]);
+
   const handleData1 = () => {
-    navigate("/register")
+    if (authUser.data === 1) {
+      navigate("/");
+    } else {
+      navigate("/register");
+    }
   };
 
   const handleData2 = () => {
-    navigate("/login")
-
+    if (authUser.data === 1) {
+      setAuthUser((prev) => ({...prev , data : "0"}));
+      navigate("/");
+    } else {
+      navigate("/login");
+    }
   };
 
   return (
@@ -84,7 +114,7 @@ const Header = () => {
                   className="font-sans text-center text-black"
                   onClick={handleData1}
                 >
-                  {headerData.data1}
+                  {headerData.data1} 
                 </button>
               </div>
               <div className="rounded-[16px]  px-5 py-1 bg-[#ff9500] flex justify-center">

@@ -1,14 +1,14 @@
 import axios from "axios";
 import { useContext, useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { AuthUserContext } from "../components/contexts/auth-context";
+import { ProductContext } from "../components/contexts/product-context";
 
 const Product = () => {
   const [data, setData] = useState([]);
   // console.log("🚀 ~ file: Product.jsx:6 ~ Product ~ data:", data);
 
   const navigate = useNavigate();
-  const [authUser, setAuthUser] = useContext(AuthUserContext);
+  const [productDetail, setProductDetail] = useContext(ProductContext);
   // console.log("🚀 ~ file: Product.jsx:12 ~ Product ~ authUser:", authUser);
 
   const apiData = "http://localhost:8000/get-data";
@@ -35,7 +35,7 @@ const Product = () => {
                   src={item.image}
                   alt=""
                   onClick={() => {
-                    setAuthUser({
+                    setProductDetail({
                       id : item.id
                     });
                     navigate("/product")
@@ -46,7 +46,7 @@ const Product = () => {
                 <div className="product-title w-full mt-5 cursor-pointer text-center text-gray-700 overflow-hidden text-ellipsis line-clamp-2 px-2 hover:text-[#ff9300] ">
                   <b
                     onClick={() => {
-                      setAuthUser({
+                      setProductDetail({
                         id : item.id
                       });
                       navigate("/product")

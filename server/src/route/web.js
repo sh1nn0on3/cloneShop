@@ -16,6 +16,8 @@ let initWebRoutes = (app) => {
 
    router.get('/get-data',homeController.getAllData);
 
+   router.post('/get-user',homeController.getUser);
+
    router.post('/get-product-data',homeController.getProductById)
 
    router.post('/add-history',homeController.addProduct)
